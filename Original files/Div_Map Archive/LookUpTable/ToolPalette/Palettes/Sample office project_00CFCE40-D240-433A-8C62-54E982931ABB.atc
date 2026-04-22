@@ -1,0 +1,553 @@
+<Palette><ItemID idValue="{00CFCE40-D240-433A-8C62-54E982931ABB}"/><Properties><ItemName resource="186" src="AcTpCatalogRes.dll"/><Images/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source/><Tools><Tool><ItemID idValue="{04314506-7712-4F2C-BB53-B7AD2EA423DD}"/><Properties><ItemName resource="160" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_OFFICE_CARPET" src="AcTpCatalogRes.dll"/></Images><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{59A63456-0025-4EA0-9CB2-608916D5177C}"/><StockToolRef idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3256776847"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Hatch>
+					<HatchType>1</HatchType>
+					<PatternName>SOLID</PatternName>
+					<SourceFile>%ProgramName%.pat</SourceFile>
+					<Angle>0</Angle>
+					<Scale>1</Scale>
+					<Spacing>1</Spacing>
+					<PenWidth>100</PenWidth>
+					<Double>0</Double>
+					<BlockExtent>0.5</BlockExtent>
+				</Hatch>
+			</Data>
+		</Tool><Tool><ItemID idValue="{072F30BA-A809-441C-8704-D627B723DD03}"/><Properties><ItemName resource="161" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_OFFICE_TRIM_CARPET" src="AcTpCatalogRes.dll"/></Images><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{59A63456-0025-4EA0-9CB2-608916D5177C}"/><StockToolRef idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3256774499"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Hatch>
+					<HatchType>1</HatchType>
+					<PatternName>SOLID</PatternName>
+					<SourceFile>%ProgramName%.pat</SourceFile>
+					<Angle>0</Angle>
+					<Scale>1</Scale>
+					<Spacing>1</Spacing>
+					<PenWidth>100</PenWidth>
+					<Double>0</Double>
+					<BlockExtent>0.5</BlockExtent>
+				</Hatch>
+			</Data>
+		</Tool><Tool><ItemID idValue="{63534C9F-E222-4BD3-844C-801AB6A33534}"/><Properties><ItemName resource="162" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_MAHOGANY" src="AcTpCatalogRes.dll"/></Images><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{59A63456-0025-4EA0-9CB2-608916D5177C}"/><StockToolRef idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3261859591"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Hatch>
+					<HatchType>1</HatchType>
+					<PatternName>SOLID</PatternName>
+					<SourceFile>%ProgramName%.pat</SourceFile>
+					<Angle>0</Angle>
+					<Scale>1</Scale>
+					<Spacing>1</Spacing>
+					<PenWidth>100</PenWidth>
+					<Double>0</Double>
+					<BlockExtent>0.5</BlockExtent>
+				</Hatch>
+			</Data>
+		</Tool><Tool><ItemID idValue="{D1D9C5D9-8A07-4CFA-BE22-83395B5DC600}"/><Properties><ItemName resource="163" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_ENTRY_CARPET" src="AcTpCatalogRes.dll"/></Images><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{59A63456-0025-4EA0-9CB2-608916D5177C}"/><StockToolRef idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3263190186"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Hatch>
+					<HatchType>1</HatchType>
+					<PatternName>SOLID</PatternName>
+					<SourceFile>%ProgramName%.pat</SourceFile>
+					<Angle>0</Angle>
+					<Scale>1</Scale>
+					<Spacing>1</Spacing>
+					<PenWidth>100</PenWidth>
+					<Double>0</Double>
+					<BlockExtent>0.5</BlockExtent>
+				</Hatch>
+			</Data>
+		</Tool><Tool><ItemID idValue="{F89FA964-570E-4535-A5DE-556F691F7EFF}"/><Properties><ItemName resource="164" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_DESK" src="AcTpCatalogRes.dll"/></Images><Description resource="176" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="189" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{C09252A1-6715-415A-8495-E5DADB93172E}"/><Properties><ItemName resource="165" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_CHAIR" src="AcTpCatalogRes.dll"/></Images><Description resource="177" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="190" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{859D5616-0300-4902-892D-23146E133199}"/><Properties><ItemName resource="166" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_COPYMACHINE" src="AcTpCatalogRes.dll"/></Images><Description resource="178" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="191" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{DC7F65AA-EA45-45E1-B80F-7343CF586160}"/><Properties><ItemName resource="167" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_COMPUTER" src="AcTpCatalogRes.dll"/></Images><Description resource="179" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="192" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{B8DA6AB0-53C4-413E-98EA-973DE5552C84}"/><Properties><ItemName resource="168" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_PHONE" src="AcTpCatalogRes.dll"/></Images><Description resource="180" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="193" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{6BBD5E85-76C4-470F-95FE-8AE32EA47F29}"/><Properties><ItemName resource="169" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_FILECABINET" src="AcTpCatalogRes.dll"/></Images><Description resource="181" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="194" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{E690B1BD-FAC7-4135-80FC-171001499B85}"/><Properties><ItemName resource="170" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_LAMP" src="AcTpCatalogRes.dll"/></Images><Description resource="182" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="195" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool><Tool><ItemID idValue="{98293860-519C-4360-AC2A-900597ADE9FD}"/><Properties><ItemName resource="171" src="AcTpCatalogRes.dll"/><Images><Image cx="32" cy="32" resource="IDB_BITMAP_32_PLANTRUBBER" src="AcTpCatalogRes.dll"/></Images><Description resource="183" src="AcTpCatalogRes.dll"/><Time createdUniversalDateTime="2003-06-04T17:16:21" modifiedUniversalDateTime="2003-06-04T17:16:21"/></Properties><Source idValue="{DB288698-E6B7-4C26-9BB7-8881A36785F2}"/><StockToolRef idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/><Data>
+				<GeneralProperties>
+					<Color>
+						<BasicPropInfo>
+							<PropValue unspecified="FALSE" valueType="2" value="0"/>
+						</BasicPropInfo>
+						<CreateInfo>
+							<AcCmColor mRGB="3221225472"/>
+						</CreateInfo>
+					</Color>
+					<Layer>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Layer>
+					<Linetype>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</Linetype>
+					<LinetypeScale>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="3" value="0"/>
+						</BasicPropInfo>
+					</LinetypeScale>
+					<PlotStyle>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="1"/>
+						</BasicPropInfo>
+					</PlotStyle>
+					<LineWeight>
+						<BasicPropInfo>
+							<PropValue unspecified="TRUE" valueType="2" value="0"/>
+						</BasicPropInfo>
+					</LineWeight>
+				</GeneralProperties>
+				<Block>
+					<BlockType>1</BlockType>
+					<BlockName resource="196" src="AcTpCatalogRes.dll"/>
+					<SourceFile>%SampleFolder%\DesignCenter\Home - Space Planner.dwg</SourceFile>
+					<Scale>1</Scale>
+					<Rotation>0</Rotation>
+					<Explode>0</Explode>
+				</Block>
+			</Data>
+		</Tool></Tools></Palette>

@@ -1,0 +1,413 @@
+(princ "\n* - Adds MNL menu utilities - * \n")
+
+;;;	ReadListFile - Purpose to read command file and pass back a list of command for batch plotting.
+(defun ReadListFile (FileName / scrfile tmpList ln)
+	(if Bug 
+		(progn
+			(princ "\n Acad.lsp ReadCmdFile - Entered\n   Parameter FileName: ")
+			(prin1 FileName)
+			(princ "\n")
+		)
+	)
+	(setq tmpList (list))
+	(if (findfile FileName)
+		(if (setq scrfile (open FileName "R"))
+			(progn
+				(while (setq ln (read-line scrfile))
+					(setq tmpList (cons (read ln) tmpList))
+				)
+				(close scrfile)
+			)
+		)
+	)
+	(if Bug 
+		(progn
+			(princ "\n Acad.Lsp!ReadListFile - Done\n")
+			(setq tmpList (reverse tmpList))
+			(princ tmpList)
+		)
+		(reverse tmpList)
+	)
+)
+
+(defun-q FilUpDatR ( Path1 Path2 FileN / CoolFlag )
+	(setq	CoolFlag	nil)
+	(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "ARX"))
+		(if (member (strcase FileN T) (arx))
+			(arxunload FileN)
+		)
+	)
+	(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "VLX"))
+		(if (vl-vlx-loaded-p FileN)
+			(vl-unload-vlx FileN)
+		)
+	)
+	(if	(not	(equal	(vl-file-size (strcat Path1 FileN))	;Source Path & File
+					(vl-file-size (strcat Path2 FileN))	;Destination Path & File
+			)
+		)
+		(progn
+			(princ (strcat "\nUpdating " FileN "..."))
+			(vl-file-delete (strcat Path2 FileN))
+			(vl-file-copy (strcat Path1 FileN) (strcat Path2 FileN))
+			(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "VLX" "MNL" "LSP"))
+				(load (strcat Path2 FileN))
+			)
+			(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "ARX"))
+				(arxload (strcat Path2 FileN))
+			)
+			(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "DLL"))
+				(startapp (strcat "C:\\WINDOWS\\system32\\regsvr32 /s " Path2 FileN))
+			)
+			(setq	CoolFlag	nil)
+		)
+		(progn
+			(princ (strcat "\nNot Updating " FileN "..."))
+			(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "VLX" "MNL" "LSP"))
+				(load (strcat Path2 FileN))
+			)
+			(if (member (strcase (substr FileN (- (strlen FileN) 2))) (list "ARX"))
+				(arxload (strcat Path2 FileN))
+			)
+			(setq	CoolFlag	nil)
+		)
+	)
+	CoolFlag
+)
+
+(defun-q StartAdds ( / )
+	(princ "\nADDS.Mnl!StartAdds - Start")
+	(setq	DevMark	nil)
+	(if (> (getvar "PLINETYPE") 0)
+		(setvar "PLINETYPE" 0)
+	)
+	(if (not AppNam)
+		(setq	AppNam		"Adds 3.00")
+	)
+	(setq	AppMode		"E"
+			LodVer		"3.0.0"
+			_DEFAULT-DIV	"PWR_DEL"						;PWR_DEL
+			project		"UTM27M"
+			XPanel		6000.0
+			YPanel		4000.0
+	)
+	
+	;	Find all source directory paths need to load Adds code.
+	(if (findfile "C:/Div_Map/Adds/FilePathRoots.txt")								;	Checks to see if file exists
+		(progn
+			(setq	RootPathLst 		(ReadListFile "C:/Div_Map/Adds/FilePathRoots.txt")
+					errorFlag			nil
+					errorMsg			""
+			)
+			(if (assoc 1 RootPathLst)											;	Checks if entry exists
+				(progn
+					(setq PrmRootPath		(nth 1 (assoc 1 RootPathLst)))
+					(if (null (vl-file-directory-p PrmRootPath))						;	Checks if file path directory is valid
+						(setq 	errorFlag 	T
+								errorMsg		(strcat errorMsg " - RootPathLst = " PrmRootPath " path not found\n")
+						)
+					)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - RootPathLst entry not found\n")
+					)
+				)
+			)
+			
+			(if (assoc 2 RootPathLst)												;	Checks if entry exists
+				(progn
+					(setq SecRootPath		(nth 1 (assoc 2 RootPathLst)))
+					(if (null (vl-file-directory-p SecRootPath))							;	Checks if file path directory is valid
+						(setq 	errorFlag 	T
+								errorMsg		(strcat errorMsg " - SecRootPath = " SecRootPath " path not found\n")
+						)
+					)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - SecRootPath entry not found\n")
+					)
+				)
+			)
+			(if (assoc 11 RootPathLst)												;	Checks if entry exists
+				(progn
+					(setq AltPrmRootDwg		(nth 1 (assoc 11 RootPathLst)))				;	Checks if file path directory is valid
+				;	(if (null (vl-file-directory-p AltPrmRootDwg))
+				;		(setq 	errorFlag 	T
+				;				errorMsg		(strcat errorMsg " - AltPrmRootDwg = " AltPrmRootDwg " path not found\n")
+				;		)
+				;	)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - AltPrmRootDwg entry not found\n")
+					)
+				)
+			)	
+			(if (assoc 12 RootPathLst)												;	Checks if entry exists
+				(progn
+					(setq AltSecRootDwg		(nth 1 (assoc 12 RootPathLst)))				;	Checks if file path directory is valid
+				;	(if (null (vl-file-directory-p AltSecRootDwg))
+				;		(setq 	errorFlag 	T
+				;				errorMsg		(strcat errorMsg " - AltSecRootDwg = " AltSecRootDwg " path not found\n")
+				;		)
+				 ;	)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - AltSecRootDwg entry not found\n")
+					)
+				)
+			)
+			(if (assoc 51 RootPathLst)												;	Checks if entry exists
+				(progn
+					(setq TestPrmRootPath	(nth 1 (assoc 51 RootPathLst)))				;	Checks if file path directory is valid
+					(if (null (vl-file-directory-p TestPrmRootPath))
+						(setq 	errorFlag 	T
+								errorMsg		(strcat errorMsg " - TestPrmRootPath = " TestPrmRootPath " path not found\n")
+						)
+					)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - TestPrmRootPath entry not found\n")
+					)
+				)
+			)
+			(if (assoc 52 RootPathLst)												;	Checks if entry exists
+				(progn
+					(setq TestSecRootPath	(nth 1 (assoc 52 RootPathLst)))				;	Checks if file path directory is valid
+					(if (null (vl-file-directory-p TestSecRootPath))
+						(setq 	errorFlag 	T
+								errorMsg		(strcat errorMsg " - TestSecRootPath = " TestSecRootPath " path not found\n")
+						)
+					)
+				)
+				(progn
+					(setq 	errorFlag 	T
+							errorMsg		(strcat errorMsg " - TestPrmRootPath entry not found\n")
+					)
+				)
+			)
+			(if errorFlag
+				(progn
+					(alert (strcat "*** Cannot read the following entries or find path in FilePathRoots.txt file - program exiting ***\n" errorMsg))
+					(exit)
+				)
+			)
+		)
+		(progn
+			(alert "*** Can not read C:/Div_Map/Adds/FilePathRoots.txt which is required for propoper operation - program exiting ****")
+			(exit)
+		)
+	)
+	(cond
+		((= (substr (getvar "ACADVER") 1 4) "24.2")		;	AutoCAD 2023
+			(setq	_Dos-Ver	"DOSLib23x64"
+					_Dos-Suf	"Arx"
+					_Cad-Ver	"24.2"
+					_Cad-Plat	"2023"
+					_Cad-Prod	"Map2023"
+					_SCS_Ver	"Acad_SCS_2023"
+					_SCS_Suf	"Vlx"
+					_SCSBVer	"Acad_SCS"
+					_SCSBSuf	"DLL"
+			)
+			(if (= (substr (getvar "wscurrent") 1 4) "(UA)")
+				(setq 	DevMark  "[Dev 23.0]")
+				(setq	DevMark	nil)
+			)
+		)
+		((= (substr (getvar "ACADVER") 1 4) "23.0")		;	AutoCAD 2019
+			(setq	_Dos-Ver	"DOSLib23x64"
+					_Dos-Suf	"Arx"
+					_Cad-Ver	"23.0"
+					_Cad-Plat	"2019"
+					_Cad-Prod	"Map2019"
+					_SCS_Ver	"Acad_SCS_2019"
+					_SCS_Suf	"Vlx"
+					_SCSBVer	"Acad_SCS"
+					_SCSBSuf	"DLL"
+			)
+			(if (= (substr (getvar "wscurrent") 1 4) "(UA)")
+				(setq 	DevMark  "[Dev 19.0]")
+				(setq	DevMark	nil)
+			)
+		)
+		((= (substr (getvar "ACADVER") 1 4) "20.1")		;	AutoCAD 2016
+			(setq	_Dos-Ver	"DOSLib20x64"
+					_Dos-Suf	"Arx"
+					_Cad-Ver	"20.1"
+					_Cad-Plat	"2016"
+					_Cad-Prod	"Map2016"
+					_SCS_Ver	"Acad_SCS_2007"
+					_SCS_Suf	"Vlx"
+					_SCSBVer	"Acad_SCS"
+					_SCSBSuf	"DLL"
+			)
+		)
+		(T
+			(setq	_Dos-Ver	"DosLib??"
+					_Cad-Ver	"???"
+					_Cad-Plat	"???"
+					_Cad-Prod	"???"
+					Failp	T
+					_SCS_Ver	"Acad_SCS"
+					Fail2p	T
+			)
+			(princ "\n*Unrecognized version of AutoCad - No DosLib load attempted*\n")
+		)
+	)
+	(if (/= _Cad-Plat	"???")
+		(progn
+			;	Sets up and loads in DOSLib library of AutoCAD functions for providing Windows OS capabilities
+			(princ	(strcat	"\n*Loading {" _Dos-Ver "} for [" _Cad-Prod " - AutoCad " _Cad-Ver "]*\n"))
+			(if (not (vl-file-directory-p "C:\\Div_Map"))
+				(vl-mkdir "C:\\Div_Map")
+			)
+			(if (not (vl-file-directory-p "C:\\Div_Map\\DosLib"))
+				(vl-mkdir "C:\\Div_Map\\DosLib")
+			)
+			(setq fileDosF nil)
+			(if (not (member (strcase (strcat _Dos-Ver "." _Dos-Suf) T) (arx)))
+				(progn
+					(if (findfile (strcat _Dos-Ver "." _Dos-Suf))
+						(progn		; 	loading local
+							(setq	Bubba	(arxload (findfile (strcat _Dos-Ver "." _Dos-Suf)))
+									fileDosF  T
+							)
+						)
+						(progn		;	loading from S Drive
+							(setq	Bubba	(FilUpDatR (strcat TestPrmRootPath "DosLib\\") "C:\\Div_Map\\DosLib\\" (strcat _Dos-Ver "." _Dos-Suf))
+									fileDosF	T
+									Failp	nil
+							)
+						)
+					)
+					(if (null fileDosF)	;	Error Message
+						(setq	Bubba	(princ	(strcat	"\n*" AppNam " Error*: "
+														_Dos-Ver " " _Dos-Suf
+														" file not found on this system!"
+												)
+										)
+								Failp	T
+						)
+					)
+				)
+			)
+			(if (not (vl-file-directory-p "C:\\Div_Map"))
+				(progn
+					(vl-mkdir "C:\\Div_Map")
+					(vl-mkdir "C:\\Div_Map\\Common")
+				)
+			)
+			
+			(setq	Fail3p	(FilUpDatR (strcat TestPrmRootPath "Common\\") "C:\\Div_Map\\Common\\" (strcat _SCSBVer "." _SCSBSuf)))
+			
+			;	Sets up and loads SCS dll which interfaces to Orcale DB
+			(princ	(strcat	"\n*Loading {" _SCS_Ver "} for [" _Cad-Prod " - AutoCad " _Cad-Ver "]*\n"))
+			(if (not C:VerPrefs)
+				(if (findfile (strcat _SCS_Ver "." _SCS_Suf))
+					(if (= (strcase _SCS_Suf T) "arx")
+						(setq	Bubba	(FilUpDatR (strcat TestPrmRootPath "Common\\") "C:\\Div_Map\\Common\\" (strcat _SCS_Ver "." _SCS_Suf))
+								Fail2p	nil
+						)
+						(setq	Bubba	(load (findfile (strcat _SCS_Ver "." _SCS_Suf)))
+								Fail2p	nil
+						)
+					)
+					(setq	Bubba	(princ	(strcat	"\n*" AppNam " Error*: "
+													_SCS_Ver " " _SCS_Suf
+													" file not found on this system!"
+											)
+									)
+							Fail2p	T
+					)
+				)
+			)
+		)
+	)
+	
+	;	Alarm/Errors Handling
+	(if Failp
+		(progn
+			(alert (strcat "***Failure Loading {" _Dos-Ver "} - program exitting***"))
+			(exit)
+		)
+	)
+	(if Fail2p
+		(progn
+			(alert (strcat "***Failure Loading2 {" _SCS_Ver "." _SCS_Suf "} - program exitting***"))
+			(exit)
+		)
+	)
+	(if Fail3p
+		(progn
+			(alert (strcat "***Failure Loading3 {" _SCSBVer "." _SCSBSuf "} - program exitting***"))
+			(exit)
+		)
+	)
+	
+	;	Locates and loads next need LISP file call to AddsGo
+	(cond
+		((findfile "C:\\Div_Map\\Adds\\Lisp\\Adds.lsp")
+			(load "C:\\Div_Map\\Adds\\Lisp\\Adds.lsp")
+			(setvar "USERS5" " {*Prod-MyDevC*}")
+			(setq	DevLev	1)
+		)
+		((findfile (strcat TestPrmRootPath "Adds\\LISP\\Adds.lsp"))
+			(load (strcat TestPrmRootPath "Adds\\LISP\\Adds.lsp"))
+			(setvar "USERS5" " {*Test-DevRC*}")
+			(setq	DevLev	5)
+		)
+		((findfile "S:\\Workgroups\\SCS Information Resources\\AppSvcs\\APC_Projects\\DivMap10\\Adds\\LISP\\Adds.lsp")
+			(load "S:\\Workgroups\\SCS Information Resources\\AppSvcs\\APC_Projects\\DivMap10\\Adds\\LISP\\Adds.lsp")
+			(setvar "USERS5" " {*Test-DevGold*}")
+			(setq	DevLev	7)
+		)
+		(T
+			(alert "*Adds Test Warning!*\nLaunch code not found!\nCheck network paths!")
+		)
+	)
+	(if (and DevLev LodVer)
+		(setq	LodLst	(list (list "Adds30" DevLevdVer)))
+	)
+	(princ "\nADDS.Mnl!StartAdds - Done")
+	(princ)
+)
+
+(defun-q StartAddsMNL ( / )
+	(StartAdds)
+	(AddsGo)
+)
+
+(if (not AppNam)
+	(cond
+		((= (substr (getvar "ACADVER") 1 4) "23.0")
+			(setq	AppNam		"Adds 19.00")
+		)
+		((= (substr (getvar "ACADVER") 1 4) "20.1")
+			(setq	AppNam		"Adds 16.00")
+		)
+		(T
+			(setq	AppNam		"Adds 3.00")
+		)
+	) 
+)
+
+(if S::StartUp
+	(setq S::StartUp (append S::StartUp StartAddsMNL))
+	(cond
+		((OR  (= (substr (getvar "ACADVER") 1 4) "20.1")	 ;	AutoCAD 2016
+		 	 (= (substr (getvar "ACADVER") 1 4) "23.0"))  ;	AutoCAD 2019
+			(defun-q S::StartUp ( / )
+				(StartAddsMNL)
+				(princ)
+			)
+		)
+	)
+)
+
+(princ " loaded.*")
+(princ)

@@ -1,0 +1,4 @@
+(load "S:\\Workgroups\\APC Power Delivery\\Division Mapping Test\\Common\\AddProfArg.Lsp")
+(AddProfArg (list "Adds_T" "S:\\Workgroups\\APC Power Delivery\\Division Mapping Test\\LookUpTable\\Profiles\\2007_Adds_T.arg"))
+(AddProfArg (list "Adds" "S:\\Workgroups\\APC Power Delivery\\Division Mapping\\LookUpTable\\Profiles\\2007_Adds.arg"))
+quit

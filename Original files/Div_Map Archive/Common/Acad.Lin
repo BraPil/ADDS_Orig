@@ -1,0 +1,143 @@
+;;
+;;  AutoCAD Linetype Definition file
+;;  Version 2.0
+;;  Copyright 1991, 1992, 1993, 1994, 1996 by Autodesk, Inc.
+;;
+*BORDER,Border __ __ . __ __ . __ __ . __ __ . __ __ .
+A,.5,-.25,.5,-.25,0,-.25
+*BORDER2,Border (.5x) __.__.__.__.__.__.__.__.__.__.__.
+A,.25,-.125,.25,-.125,0,-.125
+*BORDERX2,Border (2x) ____  ____  .  ____  ____  .  ___
+A,1.0,-.5,1.0,-.5,0,-.5
+
+*CENTER,Center ____ _ ____ _ ____ _ ____ _ ____ _ ____
+A,1.25,-.25,.25,-.25
+*CENTER2,Center (.5x) ___ _ ___ _ ___ _ ___ _ ___ _ ___
+A,.75,-.125,.125,-.125
+*CENTERX2,Center (2x) ________  __  ________  __  _____
+A,2.5,-.5,.5,-.5
+
+*DASHDOT,Dash dot __ . __ . __ . __ . __ . __ . __ . __
+A,.5,-.25,0,-.25
+*DASHDOT2,Dash dot (.5x) _._._._._._._._._._._._._._._.
+A,.25,-.125,0,-.125
+*DASHDOTX2,Dash dot (2x) ____  .  ____  .  ____  .  ___
+A,1.0,-.5,0,-.5
+
+*DASHED,Dashed __ __ __ __ __ __ __ __ __ __ __ __ __ _
+A,.5,-.25
+*DASHED2,Dashed (.5x) _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+A,.25,-.125
+*DASHEDX2,Dashed (2x) ____  ____  ____  ____  ____  ___
+A,1.0,-.5
+
+*DIVIDE,Divide ____ . . ____ . . ____ . . ____ . . ____
+A,.5,-.25,0,-.25,0,-.25
+*DIVIDE2,Divide (.5x) __..__..__..__..__..__..__..__.._
+A,.25,-.125,0,-.125,0,-.125
+*DIVIDEX2,Divide (2x) ________  .  .  ________  .  .  _
+A,1.0,-.5,0,-.5,0,-.5
+
+*DOT,Dot . . . . . . . . . . . . . . . . . . . . . . . .
+A,0,-.25
+*DOT2,Dot (.5x) ........................................
+A,0,-.125
+*DOTX2,Dot (2x) .  .  .  .  .  .  .  .  .  .  .  .  .  .
+A,0,-.5
+
+*HIDDEN,Hidden __ __ __ __ __ __ __ __ __ __ __ __ __ __
+A,.25,-.125
+*HIDDEN2,Hidden (.5x) _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+A,.125,-.0625
+*HIDDENX2,Hidden (2x) ____ ____ ____ ____ ____ ____ ____ 
+A,.5,-.25
+
+*PHANTOM,Phantom ______  __  __  ______  __  __  ______ 
+A,1.25,-.25,.25,-.25,.25,-.25
+*PHANTOM2,Phantom (.5x) ___ _ _ ___ _ _ ___ _ _ ___ _ _
+A,.625,-.125,.125,-.125,.125,-.125
+*PHANTOMX2,Phantom (2x) ____________    ____    ____   _
+A,2.5,-.5,.5,-.5,.5,-.5
+
+;;
+;;  ISO 128 (ISO/DIS 12011) linetypes
+;;
+;;  The size of the line segments for each defined ISO line, is 
+;;  defined for an usage with a pen width of 1 mm. To use them with 
+;;  the other ISO predefined pen widths, the line has to be scaled 
+;;  with the appropriate value (e.g. pen width 0,5 mm -> ltscale 0.5).
+;;
+*ACAD_ISO02W100,ISO dash __ __ __ __ __ __ __ __ __ __ __ __ __
+A,12,-3
+*ACAD_ISO03W100,ISO dash space __    __    __    __    __    __
+A,12,-18
+*ACAD_ISO04W100,ISO long-dash dot ____ . ____ . ____ . ____ . _
+A,24,-3,.5,-3
+*ACAD_ISO05W100,ISO long-dash double-dot ____ .. ____ .. ____ . 
+A,24,-3,.5,-3,.5,-3
+*ACAD_ISO06W100,ISO long-dash triple-dot ____ ... ____ ... ____
+A,24,-3,.5,-3,.5,-3,.5,-3
+*ACAD_ISO07W100,ISO dot . . . . . . . . . . . . . . . . . . . . 
+A,.5,-3
+*ACAD_ISO08W100,ISO long-dash short-dash ____ __ ____ __ ____ _
+A,24,-3,6,-3
+*ACAD_ISO09W100,ISO long-dash double-short-dash ____ __ __ ____
+A,24,-3,6,-3,6,-3
+*ACAD_ISO10W100,ISO dash dot __ . __ . __ . __ . __ . __ . __ . 
+A,12,-3,.5,-3
+*ACAD_ISO11W100,ISO double-dash dot __ __ . __ __ . __ __ . __ _
+A,12,-3,12,-3,.5,-3
+*ACAD_ISO12W100,ISO dash double-dot __ . . __ . . __ . . __ . . 
+A,12,-3,.5,-3,.5,-3
+*ACAD_ISO13W100,ISO double-dash double-dot __ __ . . __ __ . . 
+A,12,-3,12,-3,.5,-3,.5,-3
+*ACAD_ISO14W100,ISO dash triple-dot __ . . . __ . . . __ . . . _
+A,12,-3,.5,-3,.5,-3,.5,-3
+*ACAD_ISO15W100,ISO double-dash triple-dot __ __ . . . __ __ . .
+A,12,-3,12,-3,.5,-3,.5,-3,.5,-3
+
+;;  Complex linetypes
+;;
+;;  Complex linetypes have been added to this file.
+;;  These linetypes were defined in LTYPESHP.LIN in
+;;  Release 13, and are incorporated in ACAD.LIN in
+;;  Release 14.
+;;  
+;;  These linetype definitions use LTYPESHP.SHX.
+;;
+*BATTING,Batting SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+A,.0001,-.1,[BAT,ltypeshp.shx,x=-.1,s=.1],-.2,[BAT,ltypeshp.shx,r=180,x=.1,s=.1],-.1
+*CENT,centline  ----CL-----CL----CL-----CL----CL-----CL--
+A,.25,-.1,[CL,ltypeshp.shx,x=-.08,s=.1],-.005,.1
+*DRAIN,Drain ---- D ---- D ---- D ----
+A,2.5,-.2,["D",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*PROP,propertyline  ----PL-----PL----PL-----PL----PL-----PL--
+A,.25,-.1,[PL,ltypeshp.shx,x=-.08,s=.1],-.01,.1
+*FENCE,Fenceline X ----X-----X----X-----X----X-----X--
+A,.25,-.01,[EX,ltypeshp.shx,x=-.01,s=.09],-.05,.1
+*FENCELINE1,Fenceline circle ----0-----0----0-----0----0-----0--
+A,.25,-.1,[CIRC1,ltypeshp.shx,x=-.1,s=.1],-.1,.65
+*FENCELINE2,Fenceline square ----[]-----[]----[]-----[]----[]---
+A,.25,-.1,[BOX,ltypeshp.shx,x=-.1,s=.1],-.1,1
+*GAS_LINE,Gas line ----G----G----G----G----G----G--
+A,2.5,-.2,["G",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.25
+*HOT_WATER_SUPPLY,Hot water supply ---- HW ---- HW ---- HW ----
+A,.5,-.2,["HW",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*HOT_WATER,Hot water ---- H ---- H ---- H ----
+A,2.5,-.2,["H",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*PHONE,Phone ---- P ---- P ---- P ----
+A,2.5,-.2,["P",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*REMOVED,Removed  /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--
+A,.06,[REM,ltypeshp.shx,x=-.03,s=.09],.06
+*ROW,ROW  ----ROW-----ROW----ROW-----ROW----ROW-----ROW--
+A,.25,-.01,[ROW,ltypeshp.shx,x=-.01,s=.1],-.165,.1
+*SEWER,sewer ---- S ---- S ---- S ----
+A,2.5,-.2,["S",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*T,T ---- T ---- T ---- T ----
+A,2.5,-.2,["T",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*TRACKS,Tracks -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
+A,.1,[TRACK1,ltypeshp.shx,s=.12],.0000001
+*WATER_SUPPLY,water supply ---- W ---- W ---- W ----
+A,2.5,-.2,["W",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*ZIGZAG,Zig zag /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+A,.0001,[ZIG,ltypeshp.shx,s=.01],-.4,[ZIG,ltypeshp.shx,r=180,x=.2,s=.2],.2

@@ -1,0 +1,38 @@
+(if AppNam								; Code Version Indicator
+	(princ (strcat "\n" AppNam " WebMap Loading."))
+	(princ "\nAddsPlot WebMap Loading.")
+)
+
+(defun WebMap ( / )
+	(if Bug (princ "\n{ WebMap - Entered"))
+	(setq _Path-Dwf (DecodeTargetPathDwf Det1))
+	(if (= Div "M_")
+		(if Desc_1
+			(progn
+				(load (strcat _PATH-USER "SymColor"))
+				(setq	Desc_1	nil)
+			)
+		)
+	)
+	(if (/= PlotType "PDF")
+		(progn
+			(princ "\nRunning View4SwL")
+			(load (strcat _path-user "View4SwL"))
+			(princ "\nRunning View4Cap")
+			(load (strcat _path-user "View4Cap"))
+			(princ "\nRunning AddURL")
+			(load (strcat _path-user "AddURL"))
+		)
+	)
+	(princ "\nRunning NoFills")
+	(load (strcat _path-user "NoFills"))
+	(princ "\nRunning NoMasks")
+	(load (strcat _path-user "NoMasks"))
+	(if Bug (princ "\n{ WebMap -  Done"))
+	(princ)
+)
+
+(if (= (substr (strcase AppNam) 1 5) "ADDSP")
+	(WebMap)
+	(setq	LodVer	"1.50")
+)

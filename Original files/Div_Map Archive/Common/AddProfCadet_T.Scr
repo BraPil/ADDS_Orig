@@ -1,0 +1,6 @@
+(load "M:\\DivData\\MapSource\\Common\\AddProfArg.Lsp")
+(AddProfArg (list "Adds_T" "M:\\DivData\\MapSource\\LookUpTable\\Profiles\\2007_Adds_T.arg"))
+(AddProfArg (list "AddsPlot_T" "M:\\DivData\\MapSource\\LookUpTable\\Profiles\\2007_AddsPlot_T.arg"))
+(AddProfArg (list "Acad" "M:\\DivData\\MapSource\\LookUpTable\\Profiles\\2007_Acad.arg"))
+(AddProfArg (list "Cadet_T" "M:\\DivData\\MapSource\\LookUpTable\\Profiles\\2007_Cadet_T.arg"))
+quit

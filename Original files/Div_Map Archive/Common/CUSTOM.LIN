@@ -1,0 +1,63 @@
+;;  Complex linetypes
+;;
+;;  Complex linetypes have been added to this file.
+;;  These linetypes were defined in LTYPESHP.LIN in
+;;  Release 13, and are incorporated in ACAD.LIN in
+;;  Release 14.
+;;  
+;;  These linetype definitions use LTYPESHP.SHX.
+;;
+*BATTING,Batting SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+A,.0001,-.1,[BAT,ltypeshp.shx,x=-.1,s=.1],-.2,[BAT,ltypeshp.shx,r=180,x=.1,s=.1],-.1
+*Cent,centline  ----CL-----CL----CL-----CL----CL-----CL--
+A,.25,-.1,[CL,ltypeshp.shx,x=-.08,s=.1],-.005,.1
+*DIST,______ __ __ ______ __ __ ______ __ __ ______
+A,1.75,-.25,.50,-.25,.50,-.25
+*DIV,______ __ __ __ ______ __ __ __ ______
+A,1.75,-.25,.50,-.25,.50,-.25,.50,-.25
+*DRAIN,Drain ---- D ---- D ---- D ----
+A,2.5,-.2,["D",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*FENCE,Fenceline X ----X-----X----X-----X----X-----X--
+A,.25,-.01,[EX,ltypeshp.shx,x=-.01,s=.09],-.05,.1
+*FENCELINE1,Fenceline circle ----0-----0----0-----0----0-----0--
+A,.25,-.1,[CIRC1,ltypeshp.shx,x=-.1,s=.1],-.1,.65
+*FENCELINE2,Fenceline square ----[]-----[]----[]-----[]----[]---
+A,.25,-.1,[BOX,ltypeshp.shx,x=-.1,s=.1],-.1,1
+*GAS_LINE,Gas line ----G----G----G----G----G----G--
+A,2.5,-.2,["G",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.25
+*HOT_WATER_SUPPLY,Hot water supply ---- HW ---- HW ---- HW ----
+A,.5,-.2,["HW",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*HOT_WATER,Hot water ---- H ---- H ---- H ----
+A,2.5,-.2,["H",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*PIGLET,
+A,2.5,-.5,.5,-.5,.5,-.5
+*PHONE,Phone ---- P ---- P ---- P ----
+A,2.5,-.2,["P",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*POWER_LINE,Power_Line ----PL----PL----PL----PL---PL----PL--
+A,.25,-.1,[PL,ltypeshp.shx,S=0.1,R=0.0,X=-.08],-.01,.1
+*Prop,propertyline  ----PL-----PL----PL-----PL----PL-----PL--
+A,.25,-.1,[PL,ltypeshp.shx,x=-.08,s=.1],-.01,.1
+*PROPERTY,___ . ___ . ___ . ___ . ___
+A,.3,-.1,0,-.1
+*Rem,Removed  /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--
+A,.06,[REM,ltypeshp.shx,x=-.03,s=.09],.06
+*REMOVED,Removed -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
+A,.15,[TRACK1,ltypeshp.shx,s=.25],.15
+*ROW,ROW  ----ROW-----ROW----ROW-----ROW----ROW-----ROW--
+A,.25,-.01,[ROW,ltypeshp.shx,x=-.01,s=.1],-.165,.1
+*SEWER,sewer ---- S ---- S ---- S ----
+A,2.5,-.2,["S",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*SHORTDASH,_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+A,.10,-.08
+*STRT,____ _ ____ _ ____ _ ____ _ ____ _ ____ _ ____
+A,1.25,-.25,.25,-.25
+*T,T ---- T ---- T ---- T ----
+A,2.5,-.2,["T",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*TRACKS,Tracks -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
+A,.1,[TRACK1,ltypeshp.shx,s=.12],.0000001
+*WATER_SUPPLY,water supply ---- W ---- W ---- W ----
+A,2.5,-.2,["W",STANDARD,S=.1,R=0.0,X=-0.1,Y=-.05],-.2
+*ZIGZAG,Zig zag /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+A,.0001,[ZIG,ltypeshp.shx,s=.01],-.4,[ZIG,ltypeshp.shx,r=180,x=.2,s=.2],.2
+*Center,centerline  ----CL-----CL----CL-----CL----CL-----CL--
+A,.25,-.1,[CL,ltypeshp.shx,x=-.08,s=.1],-.01,.1

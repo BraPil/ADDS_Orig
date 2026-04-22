@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddsLookup>
+  <Voltages>
+    <Voltage>
+      <Code>00</Code>
+      <Description>500 kV</Description>
+      <PenNumber>3</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>01</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>04</Code>
+      <Description>  4 kV</Description>
+      <PenNumber>5</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>15</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>12</Code>
+      <Description> 12 kV</Description>
+      <PenNumber>7</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>14</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>13</Code>
+      <Description> 13 kV</Description>
+      <PenNumber>4</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>13</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>15</Code>
+      <Description>115 kV</Description>
+      <PenNumber>02</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>04</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>20</Code>
+      <Description> 20 kV</Description>
+      <PenNumber>1</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>12</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>23</Code>
+      <Description> 23 kV</Description>
+      <PenNumber>03</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>11</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>25</Code>
+      <Description> 25 kV - GCC Only</Description>
+      <PenNumber>03</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>10</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>30</Code>
+      <Description>230 kV</Description>
+      <PenNumber>3</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>02</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>35</Code>
+      <Description> 35 kV</Description>
+      <PenNumber>6</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>09</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>38</Code>
+      <Description> 38 kV</Description>
+      <PenNumber>6</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>08</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>44</Code>
+      <Description> 44 kV</Description>
+      <PenNumber>6</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>07</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>46</Code>
+      <Description> 46 kV</Description>
+      <PenNumber>6</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>06</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>61</Code>
+      <Description>161 kV</Description>
+      <PenNumber>30</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>03</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>69</Code>
+      <Description> 69 kV</Description>
+      <PenNumber>5</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>05</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>91</Code>
+      <Description>ACC-SW</Description>
+      <PenNumber>1</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>91</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>92</Code>
+      <Description>ACC</Description>
+      <PenNumber>1</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>92</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>93</Code>
+      <Description>Gulf</Description>
+      <PenNumber>1</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>93</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>94</Code>
+      <Description>MPCo</Description>
+      <PenNumber>1</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>94</OrderBy>
+    </Voltage>
+    <Voltage>
+      <Code>99</Code>
+      <Description>Unknown</Description>
+      <PenNumber>30</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>99</OrderBy>
+    </Voltage>
+  </Voltages>
+</AddsLookup>

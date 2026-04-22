@@ -1,0 +1,20 @@
+(if AppNam								; Code Version Indicator
+	(princ (strcat "\n" AppNam " Xtitle Loading."))
+	(princ "\nAddsPlot Xtitle Loading.")
+)
+
+(defun Xtitle ( / )
+	(if (/= 1 (getvar "cvport"))
+		(command "_.tilemode" 0)
+	)
+	(command "_.PSpace")
+	(command "_.Zoom" "E" "_.Zoom" "0.8x")
+	(command "_.Insert" (strcat _PATH-SYM "xtitle.dwg") (list VuX (+ 0.25 VuY)) 1 1 0 DET1 JOB_NAM SHT_NUM (strcat " 1" (chr 34) " - " sc_asci (chr 39)) NUM_SHTS VLT (date_s) DWG_NUM)
+	(command "_.MSpace")
+	(princ)
+)
+
+(if (= (substr (strcase AppNam) 1 5) "ADDSP")
+	(Xtitle)
+	(setq	LodVer	"1.50")
+)

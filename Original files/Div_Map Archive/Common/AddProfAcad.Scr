@@ -1,0 +1,3 @@
+(load "M:\\DivData\\MapSource\\Common\\AddProfArg.Lsp")
+(AddProfArg (list "Acad" "M:\\DivData\\MapSource\\LookUpTable\\Profiles\\2007_Acad.arg"))
+quit

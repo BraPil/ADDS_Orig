@@ -1,0 +1,12 @@
+;;; Visual LISP make file [V1.0] Acad_ADO saved to:[C:/Div_Map/Common] at:[8/20/03] 
+(PRV-DEF (:target . "Acad_ADO.Vlx")
+	 (:active-x . T)
+	 (:separate-namespace)
+	 (:protected . T)
+	 (:load-file-list (:lsp "Acad_ADO.Lsp"))
+	 (:require-file-list)
+	 (:ob-directory)
+	 (:tmp-directory)
+	 (:optimization . lsa)
+)
+;; EOF

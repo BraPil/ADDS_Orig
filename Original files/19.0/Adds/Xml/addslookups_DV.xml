@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AddsLookup>
+	<Voltages>
+		<Voltage>
+			<Code>00</Code>
+			<Description>500 kV</Description>
+			<PenNumber>3</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>01</OrderBy>
+		</Voltage>
+    <Voltage>
+      <Code>04</Code>
+      <Description>  4 kV</Description>
+      <PenNumber>5</PenNumber>
+      <PenDescription></PenDescription>
+      <OrderBy>14</OrderBy>
+    </Voltage>
+		<Voltage>
+			<Code>12</Code>
+			<Description> 12 kV</Description>
+			<PenNumber>7</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>13</OrderBy>
+		</Voltage>
+		<Voltage>
+			<Code>13</Code>
+			<Description> 13 kV</Description>
+			<PenNumber>4</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>12</OrderBy>
+		</Voltage>
+		<Voltage>
+			<Code>15</Code>
+			<Description>115 kV</Description>
+			<PenNumber>02</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>04</OrderBy>
+		</Voltage>
+		<Voltage>
+			<Code>20</Code>
+			<Description> 20 kV</Description>
+			<PenNumber>1</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>11</OrderBy>
+		</Voltage>
+		<Voltage>
+			<Code>23</Code>
+			<Description> 23 kV</Description>
+			<PenNumber>03</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>10</OrderBy>
+		</Voltage>
+		<Voltage>
+			<Code>30</Code>
+			<Description>230 kV</Description>
+			<PenNumber>3</PenNumber>
+			<PenDescription></PenDescription>
+			<OrderBy>02</OrderBy>
+		</Voltage>
+	<Voltage>
+	<Code>35</Code>
+	<Description> 35 kV</Description>
+	<PenNumber>6</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>09</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>38</Code>
+	<Description> 38 kV</Description>
+	<PenNumber>6</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>08</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>44</Code>
+	<Description> 44 kV</Description>
+	<PenNumber>6</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>07</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>46</Code>
+	<Description> 46 kV</Description>
+	<PenNumber>6</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>06</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>61</Code>
+	<Description>161 kV</Description>
+	<PenNumber>30</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>03</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>69</Code>
+	<Description> 69 kV</Description>
+	<PenNumber>5</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>05</OrderBy>
+	</Voltage>
+	<Voltage>
+	<Code>99</Code>
+	<Description>Unknown</Description>
+	<PenNumber>30</PenNumber>
+	<PenDescription></PenDescription>
+	<OrderBy>99</OrderBy>
+	</Voltage>
+	</Voltages>
+  <Preferences>
+    <LoginDB>PnEmbD12</LoginDB>
+  </Preferences>
+	<Logins>
+    <!-- Alabama Production Servers-->
+      <DBName>
+			<Instance>PnEmbA11</Instance>
+			<Description>ACC Prod1/PnEmbA11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+		<DBName>
+			<Instance>PnEmbA12</Instance>
+			<Description>ACC Prod2/PnEmbA12</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>PnEmbA21</Instance>
+			<Description>ACC Prod1 12c/PnEmbA21</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywmOWCwtVbrjjMgYx6h6LuPg=</AppPwd>      <!-- text:Addslodr21pr -->
+		</DBName>
+    <DBName>
+			<Instance>PnEmbA22</Instance>
+			<Description>ACC Prod2 12c/PnEmbA22</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywgkrmeMICGtiiJFkhw8RjUI=</AppPwd>      <!-- text:Addslodr22pr -->
+		</DBName>
+    <!-- Alabama User Acceptance Servers-->		
+    <DBName>
+			<Instance>UnEmbA11</Instance>
+			<Description>ACCUser1/UnEmbA11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbA12</Instance>
+			<Description>ACCUser2/UnEmbA12</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbA21</Instance>
+			<Description>ACCUser1/UnEmbA21</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywksbpS9imfdilSDdEk/Y5lg=</AppPwd>      <!-- text:Addslodr21ua -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbA22</Instance>
+			<Description>ACCUser2/UnEmbA22</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywjpA2pLQ1ziwKMVUvD66sdk=</AppPwd>      <!-- text:Addslodr22ua -->
+		</DBName>
+		<!-- Alabama Development Servers-->
+    <DBName>
+			<Instance>DnEmbA11</Instance>
+			<Description>ACC Dev1/DnEmbA11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>DnEmbA21</Instance>
+			<Description>ACC Dev1 12c/DnEmbA21</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywub87TRHaVxmLKxJ1IMSBa8=</AppPwd>      <!-- text:Addslodr21dv -->
+		</DBName>
+    <DBName>
+			<Instance>DnEmbA22</Instance>
+			<Description>ACC Dev2 12c/DnEmbA22</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywsPPd+eoL+L7y2wtpNSbBeY=</AppPwd>      <!-- text:Addslodr22dv CANNOT CONNECT-->
+		</DBName>
+    
+    <!-- Georgia Production Servers-->
+    <DBName>
+			<Instance>PnEmbG11</Instance>
+			<Description>GCCProd1/PnEmbG11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+		<DBName>
+			<Instance>PnEmbG12</Instance>
+			<Description>GCCProd2/PnEmbG12</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>PnEmbG21</Instance>
+			<Description>GCC Prod1 12c/PnEmbG21</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywmOWCwtVbrjjMgYx6h6LuPg=</AppPwd>      <!-- text:Addslodr21pr -->
+		</DBName>
+    <DBName>
+			<Instance>PnEmbG22</Instance>
+			<Description>GCC Prod2 12c/PnEmbG22</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywgkrmeMICGtiiJFkhw8RjUI=</AppPwd>      <!-- text:Addslodr22pr -->
+		</DBName>
+    <!-- Georgia User Acceptance Servers-->
+		<DBName>
+			<Instance>UnEmbG11</Instance>
+			<Description>GCC User1/UnEmbG11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbG12</Instance>
+			<Description>GCC User2/UnEmbG12</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppPwd>      <!-- text:AddsLodr -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbG21</Instance>
+			<Description>GCC User1/UnEmbG21</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywksbpS9imfdilSDdEk/Y5lg=</AppPwd>      <!-- text:Addslodr21ua -->
+		</DBName>
+    <DBName>
+			<Instance>UnEmbG22</Instance>
+			<Description>GCC User2/UnEmbG22</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywjpA2pLQ1ziwKMVUvD66sdk=</AppPwd>      <!-- text:Addslodr22ua  CANNOT CONNECT -->
+		</DBName>
+    <!-- Georgia Development Servers-->
+		<DBName>
+			<Instance>DnEmbG11</Instance>
+			<Description>GCCDev1/DnEmbG11</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppPwd>      <!-- text:ADDSLODR -->
+		</DBName>
+    <DBName>
+			<Instance>DnEmbG12</Instance>
+			<Description>GCC Dev2/DnEmbG12</Description>
+			<AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+			<AppPwd>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppPwd>      <!-- text:ADDSLODR -->
+		</DBName>
+    <DBName>
+			<Instance>DnEmbG21</Instance>
+			<Description>GCC Dev1 12c/DnEmbG21</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywub87TRHaVxmLKxJ1IMSBa8=</AppPwd>      <!-- text:Addslodr21dv -->
+		</DBName>
+    <DBName>
+			<Instance>DnEmbG22</Instance>
+			<Description>GCC Dev2 12c/DnEmbG22</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywsPPd+eoL+L7y2wtpNSbBeY=</AppPwd>      <!-- text:Addslodr22dv -->
+		</DBName>
+    
+    <!-- Alabama Distribution - Production Servers-->
+    <DBName>
+			<Instance>PnEmbD21</Instance>
+			<Description>DMC Prod1 12c/PnEmbD21</Description>
+			<AppId>ace1:cCY/PG+0t2c9m6gnXKb1xgFbu4+SGRkeu1kOeiS0Ne4=</AppId>        <!-- text:ADDSLODR -->
+			<AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywmOWCwtVbrjjMgYx6h6LuPg=</AppPwd>      <!-- text:Addslodr21pr -->
+		</DBName>
+    <!-- Alabama Distribution - User Acceptance Server(s) Note UnEmbD11 is now retired -->
+		<DBName>
+      <Instance>UnEmbD21</Instance>
+      <Description>DMC UA/UnEmbD21</Description>
+      <AppId>ace1:NgXLoExOgNY2igDxxvFgfm88Mk5Y+5COoSot7/inkXc=</AppId>        <!-- text:AddsLodr -->
+      <AppPwd>ace1:5mFrVLRFmnI5jC4OGwlywksbpS9imfdilSDdEk/Y5lg=</AppPwd>      <!-- text:Addslodr21ua -->
+    </DBName>
+  
+	</Logins>
+</AddsLookup>

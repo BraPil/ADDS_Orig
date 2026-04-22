@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1A7253B-C166-4F1E-B089-E9535115D5B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adds</RootNamespace>
+    <AssemblyName>Adds</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\div_map\common\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="accoremgd, Version=20.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd, Version=20.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd, Version=20.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Southern\Oracle\Client11_2_Win64\odp.net\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="ScCoolSecurityNET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=fb0969b600347b19, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\ScCoolSecurityNET\v4.0_4.0.0.0__fb0969b600347b19\ScCoolSecurityNET.dll</HintPath>
+    </Reference>
+    <Reference Include="ScCoolWindows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=fb0969b600347b19, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\ScCoolWindows\v4.0_4.0.0.0__fb0969b600347b19\ScCoolWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acadline.cs" />
+    <Compile Include="acadsymbol.cs" />
+    <Compile Include="acadtext.cs" />
+    <Compile Include="adds.cs" />
+    <Compile Include="addsplot.cs" />
+    <Compile Include="AttributeFuncts.cs" />
+    <Compile Include="BusinessEntity\Plot.cs" />
+    <Compile Include="Common\constants.cs" />
+    <Compile Include="Entitiy\Settings.cs" />
+    <Compile Include="Forms\AcadSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcadSplash.designer.cs">
+      <DependentUpon>AcadSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\changesdialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\changesdialog.designer.cs">
+      <DependentUpon>changesdialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlogGroupsByDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlogGroupsByDef.Designer.cs">
+      <DependentUpon>frmPlogGroupsByDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlotCustoms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlotCustoms.Designer.cs">
+      <DependentUpon>frmPlotCustoms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlotGroupDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlotGroupDef.Designer.cs">
+      <DependentUpon>frmPlotGroupDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmdatalink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdatalink.designer.cs">
+      <DependentUpon>frmdatalink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlatlongcals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlatlongcals.designer.cs">
+      <DependentUpon>frmlatlongcals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlinedialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlinedialog.designer.cs">
+      <DependentUpon>frmlinedialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlot.Designer.cs">
+      <DependentUpon>frmPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlotDefMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlotDefMain.Designer.cs">
+      <DependentUpon>frmPlotDefMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmreplaceblock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmreplaceblock.designer.cs">
+      <DependentUpon>frmreplaceblock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmresults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmresults.designer.cs">
+      <DependentUpon>frmresults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSelectSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelectSub.Designer.cs">
+      <DependentUpon>frmSelectSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSpecialSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSpecialSub.Designer.cs">
+      <DependentUpon>frmSpecialSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jigs.cs" />
+    <Compile Include="pcircuitlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pcircuitlist.designer.cs">
+      <DependentUpon>pcircuitlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="polylineinfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SCS.cs" />
+    <Compile Include="symbolobject.cs" />
+    <Compile Include="utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AcadSplash.resx">
+      <DependentUpon>AcadSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\changesdialog.resx">
+      <DependentUpon>changesdialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdatalink.resx">
+      <DependentUpon>frmdatalink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlatlongcals.resx">
+      <DependentUpon>frmlatlongcals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlinedialog.resx">
+      <DependentUpon>frmlinedialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlogGroupsByDef.resx">
+      <DependentUpon>frmPlogGroupsByDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlot.resx">
+      <DependentUpon>frmPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlotCustoms.resx">
+      <DependentUpon>frmPlotCustoms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlotDefMain.resx">
+      <DependentUpon>frmPlotDefMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlotGroupDef.resx">
+      <DependentUpon>frmPlotGroupDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmreplaceblock.resx">
+      <DependentUpon>frmreplaceblock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmresults.resx">
+      <DependentUpon>frmresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelectSub.resx">
+      <DependentUpon>frmSelectSub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSpecialSub.resx">
+      <DependentUpon>frmSpecialSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pcircuitlist.resx">
+      <DependentUpon>pcircuitlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xml\addslookups.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Xml\addslookups_DV.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

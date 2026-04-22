@@ -1,0 +1,3 @@
+(load "S:\\Workgroups\\APC Power Delivery\\Division Mapping\\Common\\AddProfArg.Lsp")
+(AddProfArg (list "AddsPlot" "S:\\Workgroups\\APC Power Delivery\\Division Mapping\\LookUpTable\\Profiles\\2007_AddsPlot.arg"))
+quit
